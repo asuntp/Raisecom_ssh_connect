@@ -50,7 +50,7 @@ def raisecom_command(
 if __name__ == "__main__":
 
     port = 3
-    ip_swich = "172.17.16.17"
+    ip_swich = "****"
 
     commands = [
                 f"show interface port {port}",
@@ -60,5 +60,5 @@ if __name__ == "__main__":
                 f"test cable-diagnostics port-list {port}",
                 f"show cable-diagnostics port-list {port}",
                 ]
-    result = raisecom_command(ip_swich, "admin", "Iyzufdjkit,yfz7", "raisecom", commands)
+    result = raisecom_command(ip_swich, "admin", "*****", "raisecom", commands)
     pprint(result, width=200)
